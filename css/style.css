@@ -1,0 +1,88 @@
+body{
+  background-image: url("../images/HP1.jpg");
+  font-family: 'Montserrat', sans-serif;
+}
+
+#inicio {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  text-align: center;
+}
+
+
+h1{
+  font-size: 7rem;
+  padding-top: 5rem;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+hr{
+  color: white;
+}
+
+.button{
+  background-color: rgba(3, 11, 35, 0.5);
+  font-size: 1.2rem;
+  color: white;
+  border: 2px solid white;
+  border-radius: 8px;
+  padding: 1rem;
+  display: inline-table;
+}
+
+.button:hover {
+    background-color: rgba(101, 234, 33, 0.5); /* Green */
+    color: white;
+}
+
+.square {
+  display: inline-table;
+  width: 400px;
+  height: 200px;
+  padding: 2rem;
+  white-space: pre-line;
+  background-color: rgba(3, 11, 35, 0.5);
+  border: 2px solid white;
+  border-radius: 8px;
+}
+
+.field{
+  background-color: rgba(3, 11, 35, 0.5);
+  color: white;
+  font-size: 1.2rem;
+  border: 2px solid #white;
+  border-radius: 8px;
+  padding: 1rem;
+  display: inline-table;
+  text-align: center;
+}
+
+#insert, #pregunta1{
+  font-size: 1.5rem;
+  color: white;
+  text-align: center;
+  font-family: inherit;
+  padding: 2rem;
+}
+
+
+#jugar, #noJuego, #pregunta1, #pregunta2, #pregunta3, #pregunta4,
+#pregunta5, #incorrectos, #resultados, #respuestas{
+  font-size: 1.5rem;
+  color: white;
+  text-align: center;
+  font-family: inherit;
+  padding: 2rem;
+  display: none;
+
+}
+
+.margin {
+  margin: 3rem;
+}

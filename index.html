@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Potter Trivia</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+
+
+<!--Bienvenida, insertar nombre-->
+    <section id="inicio">
+      <h1> Bienvenid@ </h1>
+      <p>¿Estas list@ para conocer cuánto sabes de Harry Potter?</p>
+      <form>
+        <input type="text" class="field" name="" value="" id="name" placeholder= "Ingresa tu nombre">
+        <input type="button" class="button" name="" onclick="iniciar()" value="Empezar">
+      </form>
+    </section>
+
+<!--Imprimir nombre más saludo-->
+    <div class="" id="insert">
+    </div>
+
+<!--Pregunta si juego o no-->
+    <div class="" id="jugar">
+      <form>
+        <h4>¿Quieres jugar?</h4>
+        <input type="button" name="" value="  Si  " class="button" onclick="siJuega()">
+        <input type="button" name="" value="  No  " class="button" onclick="noJuega()">
+      </form>
+    </div>
+
+<!--No juega-->
+    <div class="" id="noJuego">
+      <h3>Buu!... <span id="muggle"></span>, eres un muggle!</h3> <br>
+      <input type="submit" class="button margin" name="" value="Inicio" onclick="location.reload()">
+    </div>
+
+
+<!--Pregunta 1-->
+    <div class="" id="pregunta1">
+      <form>
+        <p>1. ¿Cuál es la plataforma para tomar el tren a Hogwarts? <br /><br /> </p>
+        <input type="button" class="button"  value="5 1/2" onclick="respuesta1m()"/> <br /><br />
+        <input type="button" class="button"  value="9 3/4" onclick="respuesta1b()"/> <br /><br />
+        <input type="button" class="button"  value="8 2/3" onclick="respuesta1m()" /> <br /><br /><br/>
+      </form>
+    </div>
+
+
+    <!--Pregunta 2-->
+        <div class="" id="pregunta2">
+          <form>
+            <p>2. ¿Cuál es el nombre de la casa a la que pertenece Harry Potter? <br /><br /> </p>
+            <input type="button" class="button"  value="Gryffindor" onclick="respuesta2b()"/> <br /><br />
+            <input type="button" class="button"  value="Hufflepuff" onclick="respuesta2m()"/> <br /><br />
+            <input type="button" class="button"  value="Slytherin" onclick="respuesta2m()" /> <br /><br /><br/>
+          </form>
+        </div>
+
+        <!--Pregunta 3-->
+            <div class="" id="pregunta3">
+              <form>
+                <p>3. ¿Qué elemento comparten las varitas de Harry y Voldemort? <br /><br /> </p>
+                <input type="button" class="button"  value="Pluma de Fenix" onclick="respuesta3b()"/> <br /><br />
+                <input type="button" class="button"  value="Pelo de Unicornio" onclick="respuesta3m()"/> <br /><br />
+                <input type="button" class="button"  value="Fibra de Corazón de Dragón" onclick="respuesta3m()" /> <br /><br /><br/>
+              </form>
+            </div>
+
+            <!--Pregunta 4-->
+                <div class="" id="pregunta4">
+                  <form>
+                    <p>4. ¿Cuál es el nombre de Lord Voldemort? <br /><br /> </p>
+                    <input type="button" class="button"  value="Tom Marvin Riddle " onclick="respuesta4m()"/> <br /><br />
+                    <input type="button" class="button"  value="Tom Marvolo Riddle " onclick="respuesta4b()"/> <br /><br />
+                    <input type="button" class="button"  value="Tom Martin  Riddle " onclick="respuesta4m()" /> <br /><br /><br/>
+                  </form>
+                </div>
+<!--Pregunta 5-->
+                <form id="pregunta5">
+                  <p>5. ¿Cuál es el segundo nombre de Harry?<br /><br /></p>
+                  <input type="text" class="field"  value="" id="harry" placeholder= "Inserta tu respuesta" name="" required> <br> <br>
+                  <input type="button" class="button" name="" onclick="respuesta5()" value="Enviar">
+                </form>
+
+<!--Respuestas-->
+    <section id="respuestas">
+      <h2>Resultados</h2>
+
+      <div class="square">
+        <h4>Respuestas correctas</h4>
+        <hr>
+        <span id="resultados"></span>
+      </div>
+      <div class="square" >
+        <h4>Respuestas incorrectas</h4>
+        <hr>
+        <span id="incorrectos"></span>
+      </div>
+      <div class="">
+        <input type="submit" class="button margin" name="" value="Otra vez" onclick="location.reload()">
+      </div>
+    </section>
+
+
+
+
+
+    <script type="text/javascript" src="js/app.js">
+    </script>
+  </body>
+</html>
